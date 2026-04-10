@@ -1,36 +1,47 @@
-# NdabeRestAssured — Simple README
 
-This project contains automated API tests built with RestAssured and run by Maven. Test results are collected by Allure and stored in `allure-results/`.
+# NdabeRestAssured
 
-What this project uses
-- Java (JDK) — language/runtime
+This repository contains an automated API test suite implemented in Java. The tests exercise REST endpoints and include utilities for test setup and data access.
+
+Tools used
+- Java (JDK) — language and runtime
 - Maven — build and test runner
-- RestAssured — API testing library
-- TestNG — test framework (see `pom.xml`)
-- Allure TestNG adapter — generates `allure-results/` for reporting
-- MySQL connector — used by test utilities when connecting to a database
+- RestAssured — HTTP/API testing library
+- TestNG — test framework (configured in `pom.xml`)
+- Allure TestNG adapter — test reporting (produces `allure-results/`)
+- MySQL Connector/J — database access for test utilities
 
-Quick commands
-- Run all tests:
 
-```powershell
-mvn clean test
-```
+Project layout (high level)
+- Tests and test utilities: `src/test/java`
+- Test resources and configuration: `src/test/resources`
+- Build configuration: `pom.xml`
+- Collected test results: `allure-results/`
 
-- Run a single test class:
+What is tested
+- End-to-end user lifecycle for the API under test, including:
+  - User registration (create a new user)
+  - Admin login (uses admin credentials loaded from the test DB)
+  - Approving the newly registered user
+  - Granting the user an admin role
+  - Verifying the user's admin role
+  - Logging in as the new user
+  - Deleting the user
 
-```powershell
-mvn -Dtest=MyTestClass test
-```
+Package and class responsibilities
+- `Tests` package
+  - `UserRegistrationTest` — orchestrates the end-to-end user lifecycle test flow. Uses TestNG `@BeforeClass` and `@Test` (with dependsOnMethods) to run steps in order.
 
-- View Allure report (requires Allure CLI):
+- `RequestBuilder` package
+  - `ApiRequestBuilder` — builds and sends API calls (register, login, approve, role change, verify, delete). Manages tokens and IDs between calls.
 
-```powershell
-allure serve allure-results
-```
+- `Payload` package
+  - `PayloadBuilder` — constructs JSON payloads used by the API (login, register, role change, delete, etc.).
 
-Where to look
-- Tests: `src/test/java`
-- Allure data: `allure-results/`
-- Build config: `pom.xml`
+- `Utilities` package
+  - `Requests` — small wrappers around RestAssured to standardize request/response usage.
+  - `DatabaseConnection` — loads admin credentials from a test database (or from `config.properties`/env or system properties). Used to perform admin operations in tests.
+
+- `Base` package
+  - `BaseURIs` — defines the base URL used by requests.
 
