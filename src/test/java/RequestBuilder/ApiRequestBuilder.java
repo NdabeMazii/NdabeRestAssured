@@ -3,8 +3,8 @@ package RequestBuilder;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-import static Common.BaseURIs.baseURL;
-import static PayloadBuilder.PayloadBuilder.*;
+import static Base.BaseURIs.baseURL;
+import static Payload.PayloadBuilder.*;
 
 public class ApiRequestBuilder {
     static String authToken;
