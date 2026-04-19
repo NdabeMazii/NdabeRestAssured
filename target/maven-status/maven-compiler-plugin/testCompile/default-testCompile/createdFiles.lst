@@ -1,0 +1,6 @@
+Utilities\DatabaseConnection.class
+Base\BaseURIs.class
+Tests\UserRegistrationTest.class
+RequestBuilder\ApiRequestBuilder.class
+Payload\PayloadBuilder.class
+Utilities\Requests.class

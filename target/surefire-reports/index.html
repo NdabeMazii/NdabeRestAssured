@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,12 +113,32 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.UserRegistrationTest" class="method navigator-link" hash-for-method="deleteUserTest">deleteUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.UserRegistrationTest" class="method navigator-link" hash-for-method="loginAsAdmin">loginAsAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.UserRegistrationTest" class="method navigator-link" hash-for-method="makeUserAdmin">makeUserAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="Tests.UserRegistrationTest" class="method navigator-link" hash-for-method="userLoginTest">userLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="Tests.UserRegistrationTest" class="method navigator-link" hash-for-method="userRegistration">userRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests.UserRegistrationTest" class="method navigator-link" hash-for-method="verifyUserIsAdmin">verifyUserIsAdmin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -155,6 +175,27 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="deleteUserTest">
+                  </a> <!-- deleteUserTest -->
+                  <span class="method-name">deleteUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAsAdmin">
+                  </a> <!-- loginAsAdmin -->
+                  <span class="method-name">loginAsAdmin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeUserAdmin">
+                  </a> <!-- makeUserAdmin -->
+                  <span class="method-name">makeUserAdmin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="userLoginTest">
                   </a> <!-- userLoginTest -->
                   <span class="method-name">userLoginTest</span>
@@ -165,6 +206,13 @@
                   <a name="userRegistration">
                   </a> <!-- userRegistration -->
                   <span class="method-name">userRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAdmin">
+                  </a> <!-- verifyUserIsAdmin -->
+                  <span class="method-name">verifyUserIsAdmin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,28 +268,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'adminLoginTest')
+data.setCell(0, 1, 'userRegistration')
 data.setCell(0, 2, 'Tests.UserRegistrationTest')
-data.setCell(0, 3, 5761);
+data.setCell(0, 3, 9973);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'userRegistration')
+data.setCell(1, 1, 'approveUserRegistration')
 data.setCell(1, 2, 'Tests.UserRegistrationTest')
-data.setCell(1, 3, 1074);
+data.setCell(1, 3, 5453);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'userLoginTest')
+data.setCell(2, 1, 'makeUserAdmin')
 data.setCell(2, 2, 'Tests.UserRegistrationTest')
-data.setCell(2, 3, 711);
+data.setCell(2, 3, 5412);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'approveUserRegistration')
+data.setCell(3, 1, 'userLoginTest')
 data.setCell(3, 2, 'Tests.UserRegistrationTest')
-data.setCell(3, 3, 268);
+data.setCell(3, 3, 4130);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyUserIsAdmin')
+data.setCell(4, 2, 'Tests.UserRegistrationTest')
+data.setCell(4, 3, 3655);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'adminLoginTest')
+data.setCell(5, 2, 'Tests.UserRegistrationTest')
+data.setCell(5, 3, 1607);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginAsAdmin')
+data.setCell(6, 2, 'Tests.UserRegistrationTest')
+data.setCell(6, 3, 886);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'deleteUserTest')
+data.setCell(7, 2, 'Tests.UserRegistrationTest')
+data.setCell(7, 3, 237);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -273,20 +337,36 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">adminLoginTest</span>
-                <span class="method-start">649 ms</span>
+                <span class="method-name">userRegistration</span>
+                <span class="method-start">10919 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">userRegistration</span>
-                <span class="method-start">6506 ms</span>
+                <span class="method-name">adminLoginTest</span>
+                <span class="method-start">20964 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">approveUserRegistration</span>
-                <span class="method-start">7584 ms</span>
+                <span class="method-start">22575 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">makeUserAdmin</span>
+                <span class="method-start">28031 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">userLoginTest</span>
-                <span class="method-start">7856 ms</span>
+                <span class="method-start">33445 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAdmin</span>
+                <span class="method-start">37577 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginAsAdmin</span>
+                <span class="method-start">41234 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUserTest</span>
+                <span class="method-start">42123 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

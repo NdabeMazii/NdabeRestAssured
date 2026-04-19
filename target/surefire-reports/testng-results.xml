@@ -1,32 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-07T08:56:21 SAST" name="Surefire suite" finished-at="2026-04-07T08:56:30 SAST" duration-ms="8614">
+  <suite started-at="2026-04-19T10:09:47 SAST" name="Surefire suite" finished-at="2026-04-19T10:10:29 SAST" duration-ms="42394">
     <groups>
     </groups>
-    <test started-at="2026-04-07T08:56:21 SAST" name="Surefire test" finished-at="2026-04-07T08:56:30 SAST" duration-ms="8614">
+    <test started-at="2026-04-19T10:09:47 SAST" name="Surefire test" finished-at="2026-04-19T10:10:29 SAST" duration-ms="42394">
       <class name="Tests.UserRegistrationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.UserRegistrationTest@f09733f]" started-at="2026-04-07T08:56:21 SAST" name="setup" finished-at="2026-04-07T08:56:22 SAST" duration-ms="635" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.UserRegistrationTest@6340e5f0]" started-at="2026-04-19T10:09:47 SAST" name="setup" finished-at="2026-04-19T10:09:58 SAST" duration-ms="10907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="adminLoginTest()[pri:0, instance:Tests.UserRegistrationTest@f09733f]" started-at="2026-04-07T08:56:22 SAST" name="adminLoginTest" finished-at="2026-04-07T08:56:28 SAST" duration-ms="5761" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminLoginTest -->
-        <test-method signature="userRegistration()[pri:0, instance:Tests.UserRegistrationTest@f09733f]" started-at="2026-04-07T08:56:28 SAST" name="userRegistration" finished-at="2026-04-07T08:56:29 SAST" depends-on-methods="Tests.UserRegistrationTest.adminLoginTest" duration-ms="1074" status="PASS">
+        <test-method signature="userRegistration()[pri:0, instance:Tests.UserRegistrationTest@6340e5f0]" started-at="2026-04-19T10:09:58 SAST" name="userRegistration" finished-at="2026-04-19T10:10:08 SAST" duration-ms="9973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegistration -->
-        <test-method signature="approveUserRegistration()[pri:0, instance:Tests.UserRegistrationTest@f09733f]" started-at="2026-04-07T08:56:29 SAST" name="approveUserRegistration" finished-at="2026-04-07T08:56:29 SAST" depends-on-methods="Tests.UserRegistrationTest.userRegistration" duration-ms="268" status="PASS">
+        <test-method signature="adminLoginTest()[pri:0, instance:Tests.UserRegistrationTest@6340e5f0]" started-at="2026-04-19T10:10:08 SAST" name="adminLoginTest" finished-at="2026-04-19T10:10:09 SAST" depends-on-methods="Tests.UserRegistrationTest.userRegistration" duration-ms="1607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLoginTest -->
+        <test-method signature="approveUserRegistration()[pri:0, instance:Tests.UserRegistrationTest@6340e5f0]" started-at="2026-04-19T10:10:09 SAST" name="approveUserRegistration" finished-at="2026-04-19T10:10:15 SAST" depends-on-methods="Tests.UserRegistrationTest.adminLoginTest" duration-ms="5453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- approveUserRegistration -->
-        <test-method signature="userLoginTest()[pri:0, instance:Tests.UserRegistrationTest@f09733f]" started-at="2026-04-07T08:56:29 SAST" name="userLoginTest" finished-at="2026-04-07T08:56:30 SAST" depends-on-methods="Tests.UserRegistrationTest.approveUserRegistration" duration-ms="711" status="PASS">
+        <test-method signature="makeUserAdmin()[pri:0, instance:Tests.UserRegistrationTest@6340e5f0]" started-at="2026-04-19T10:10:15 SAST" name="makeUserAdmin" finished-at="2026-04-19T10:10:20 SAST" depends-on-methods="Tests.UserRegistrationTest.approveUserRegistration" duration-ms="5412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeUserAdmin -->
+        <test-method signature="userLoginTest()[pri:0, instance:Tests.UserRegistrationTest@6340e5f0]" started-at="2026-04-19T10:10:20 SAST" name="userLoginTest" finished-at="2026-04-19T10:10:24 SAST" depends-on-methods="Tests.UserRegistrationTest.makeUserAdmin" duration-ms="4130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLoginTest -->
+        <test-method signature="verifyUserIsAdmin()[pri:0, instance:Tests.UserRegistrationTest@6340e5f0]" started-at="2026-04-19T10:10:24 SAST" name="verifyUserIsAdmin" finished-at="2026-04-19T10:10:28 SAST" depends-on-methods="Tests.UserRegistrationTest.makeUserAdmin" duration-ms="3655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAdmin -->
+        <test-method signature="loginAsAdmin()[pri:0, instance:Tests.UserRegistrationTest@6340e5f0]" started-at="2026-04-19T10:10:28 SAST" name="loginAsAdmin" finished-at="2026-04-19T10:10:29 SAST" depends-on-methods="Tests.UserRegistrationTest.verifyUserIsAdmin" duration-ms="886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsAdmin -->
+        <test-method signature="deleteUserTest()[pri:0, instance:Tests.UserRegistrationTest@6340e5f0]" started-at="2026-04-19T10:10:29 SAST" name="deleteUserTest" finished-at="2026-04-19T10:10:29 SAST" depends-on-methods="Tests.UserRegistrationTest.loginAsAdmin" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserTest -->
       </class> <!-- Tests.UserRegistrationTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

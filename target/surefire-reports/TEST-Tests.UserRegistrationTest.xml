@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="Tests.UserRegistrationTest" time="9.763" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="Tests.UserRegistrationTest" time="43.153" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,8 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\ndabe\AppData\Local\Temp\surefire2337269409762709460\surefirebooter-20260407085619912_3.jar C:\Users\ndabe\AppData\Local\Temp\surefire2337269409762709460 2026-04-07T08-56-19_582-jvmRun1 surefire-20260407085619912_1tmp surefire_0-20260407085619912_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ndabe\AppData\Local\Temp\surefire15850016737622898460\surefirebooter-20260419100946228_3.jar C:\Users\ndabe\AppData\Local\Temp\surefire15850016737622898460 2026-04-19T10-09-46_062-jvmRun1 surefire-20260419100946228_1tmp surefire_0-20260419100946228_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="UserRegistrationTest"/>
     <property name="surefire.test.class.path" value="C:\Users\ndabe\Desktop\Ndosi Test Automation\Projects\NdabeRestAssured\NdabeRestAssured\target\test-classes;C:\Users\ndabe\Desktop\Ndosi Test Automation\Projects\NdabeRestAssured\NdabeRestAssured\target\classes;C:\Users\ndabe\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\ndabe\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\ndabe\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\ndabe\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\ndabe\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\ndabe\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ndabe\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\ndabe\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\ndabe\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\ndabe\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ndabe\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\ndabe\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\ndabe\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\ndabe\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\ndabe\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\ndabe\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\ndabe\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\ndabe\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\ndabe\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\ndabe\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\ndabe\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\ndabe\.m2\repository\com\google\code\gson\gson\2.13.0\gson-2.13.0.jar;C:\Users\ndabe\.m2\repository\com\google\errorprone\error_prone_annotations\2.37.0\error_prone_annotations-2.37.0.jar;C:\Users\ndabe\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\ndabe\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\ndabe\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\ndabe\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;C:\Users\ndabe\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\ndabe\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\ndabe\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\ndabe\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\ndabe\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\ndabe\.m2\repository\io\rest-assured\json-schema-validator\5.5.1\json-schema-validator-5.5.1.jar;C:\Users\ndabe\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\ndabe\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\ndabe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.0\jackson-databind-2.11.0.jar;C:\Users\ndabe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.0\jackson-annotations-2.11.0.jar;C:\Users\ndabe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.0\jackson-core-2.11.0.jar;C:\Users\ndabe\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\ndabe\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\ndabe\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\ndabe\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\ndabe\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\ndabe\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\ndabe\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\ndabe\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\ndabe\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\ndabe\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ndabe\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\ndabe\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\ndabe\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\ndabe\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ndabe\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\ndabe\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\ndabe\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\ndabe\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ndabe"/>
@@ -31,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ndabe\AppData\Local\Temp\surefire2337269409762709460\surefirebooter-20260407085619912_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ndabe\AppData\Local\Temp\surefire15850016737622898460\surefirebooter-20260419100946228_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.9+7-LTS-338"/>
@@ -51,7 +50,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21\bin;C:\Program Files\apache-maven-3.9.14\bin;C:\Program Files\nodejs\;C:\Users\ndabe\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\ndabe\AppData\Local\Programs\Python\Python314\;C:\Users\ndabe\AppData\Local\Microsoft\WindowsApps;C:\Users\ndabe\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21\bin;C:\Program Files\apache-maven-3.9.14\bin;C:\Program Files\nodejs\;C:\Program Files\allure-2.39.0\bin;C:\Users\ndabe\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\ndabe\AppData\Local\Programs\Python\Python314\;C:\Users\ndabe\AppData\Local\Microsoft\WindowsApps;C:\Users\ndabe\AppData\Roaming\npm;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -59,10 +58,73 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="adminLoginTest" classname="Tests.UserRegistrationTest" time="5.849">
-    <system-out><![CDATA[DB -> Email: spare@admin.com, Password: @12345678
-Using admin credentials -> Email: spare@admin.com, Password: @12345678
+  <testcase name="userRegistration" classname="Tests.UserRegistrationTest" time="10.04">
+    <system-out><![CDATA[Email: spare@admin.com, Password: @12345678
 Request method:	POST
+Request URI:	https://ndosiautomation.co.za/APIDEV/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Ndabe",
+    "lastName": "Mazii",
+    "password": "Mazii@053103",
+    "groupId": "1deae17a-c67a-4bb0-bdeb-df0fc9e2e526",
+    "confirmPassword": "Mazii@053103",
+    "email": "viola.keeling@yahoo.com"
+}
+HTTP/1.1 201 Created
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+Access-Control-Max-Age: 3600
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Cache-Control: post-check=0,pre-check=0
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Length: 302
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Date: Sun, 19 Apr 2026 08:10:07 GMT
+Server: LiteSpeed
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+{
+    "success": true,
+    "message": "Registration submitted successfully. Your account is pending admin approval.",
+    "data": {
+        "id": "964be2db-da12-48de-a352-f5a359efedba",
+        "firstName": "Ndabe",
+        "lastName": "Mazii",
+        "email": "viola.keeling@yahoo.com",
+        "groupId": "1deae17a-c67a-4bb0-bdeb-df0fc9e2e526",
+        "groupName": "Group A",
+        "approvalStatus": "pending",
+        "createdAt": "2026-04-19T10:10:07.000Z"
+    }
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="adminLoginTest" classname="Tests.UserRegistrationTest" time="1.61">
+    <system-out><![CDATA[Request method:	POST
 Request URI:	https://ndosiautomation.co.za/APIDEV/login
 Proxy:			<none>
 Request params:	<none>
@@ -93,7 +155,7 @@ Expires: Thu, 01 Jan 1970 00:00:00 GMT
 Content-Length: 512
 Content-Encoding: gzip
 Vary: Accept-Encoding
-Date: Tue, 07 Apr 2026 06:56:28 GMT
+Date: Sun, 19 Apr 2026 08:10:09 GMT
 Server: LiteSpeed
 X-Frame-Options: DENY
 X-Content-Type-Options: nosniff
@@ -115,86 +177,22 @@ alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=259
             "groupName": "1st Group 2026",
             "approvalStatus": "approved",
             "createdAt": "2026-03-16 16:15:58",
-            "updatedAt": "2026-04-07 08:53:26"
+            "updatedAt": "2026-04-19 10:06:07"
         },
-        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIwN2E5ZDY2Ni05ZjE0LTQ5YjktOTJmYi02YjBkYWI5OTAwYjYiLCJlbWFpbCI6InNwYXJlQGFkbWluLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NTU0NDk4OCwiZXhwIjoxNzc1NjMxMzg4fQ.fINtil-2Wyo_97hRUEpZmpKk5pLaKGdnHpLiQLhbtWw"
-    }
-}
-]]></system-out>
-    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-]]></system-err>
-  </testcase>
-  <testcase name="userRegistration" classname="Tests.UserRegistrationTest" time="1.077">
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://ndosiautomation.co.za/APIDEV/register
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "firstName": "Register",
-    "lastName": "Jsonapi",
-    "password": "@87654321",
-    "groupId": "5328c91e-fc40-11f0-8e00-5000e6331276",
-    "confirmPassword": "@87654321",
-    "email": "lesley.watsica@yahoo.com"
-}
-HTTP/1.1 201 Created
-Connection: Keep-Alive
-Keep-Alive: timeout=5, max=100
-Content-Type: application/json; charset=utf-8
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
-Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
-Access-Control-Max-Age: 3600
-Cache-Control: no-store, no-cache, must-revalidate, max-age=0
-Cache-Control: post-check=0,pre-check=0
-Pragma: no-cache
-Expires: Thu, 01 Jan 1970 00:00:00 GMT
-Content-Length: 304
-Content-Encoding: gzip
-Vary: Accept-Encoding
-Date: Tue, 07 Apr 2026 06:56:30 GMT
-Server: LiteSpeed
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-X-XSS-Protection: 1; mode=block
-Referrer-Policy: strict-origin-when-cross-origin
-alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
-
-{
-    "success": true,
-    "message": "Registration submitted successfully. Your account is pending admin approval.",
-    "data": {
-        "id": "f40493df-6aa5-4df0-b425-1368f314ffe9",
-        "firstName": "Register",
-        "lastName": "Jsonapi",
-        "email": "lesley.watsica@yahoo.com",
-        "groupId": "5328c91e-fc40-11f0-8e00-5000e6331276",
-        "groupName": "1st Group 2026",
-        "approvalStatus": "pending",
-        "createdAt": "2026-04-07T08:56:30.000Z"
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIwN2E5ZDY2Ni05ZjE0LTQ5YjktOTJmYi02YjBkYWI5OTAwYjYiLCJlbWFpbCI6InNwYXJlQGFkbWluLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NjU4NjIwOSwiZXhwIjoxNzc2NjcyNjA5fQ.4PCzxNBDskTLptnXHVRS0PqMWJSuCgTE5emB1jLMV9c"
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="approveUserRegistration" classname="Tests.UserRegistrationTest" time="0.272">
+  <testcase name="approveUserRegistration" classname="Tests.UserRegistrationTest" time="5.455">
     <system-out><![CDATA[Request method:	PUT
-Request URI:	https://ndosiautomation.co.za/APIDEV/admin/users/f40493df-6aa5-4df0-b425-1368f314ffe9/approve
+Request URI:	https://ndosiautomation.co.za/APIDEV/admin/users/964be2db-da12-48de-a352-f5a359efedba/approve
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIwN2E5ZDY2Ni05ZjE0LTQ5YjktOTJmYi02YjBkYWI5OTAwYjYiLCJlbWFpbCI6InNwYXJlQGFkbWluLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NTU0NDk4OCwiZXhwIjoxNzc1NjMxMzg4fQ.fINtil-2Wyo_97hRUEpZmpKk5pLaKGdnHpLiQLhbtWw
+Headers:		Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIwN2E5ZDY2Ni05ZjE0LTQ5YjktOTJmYi02YjBkYWI5OTAwYjYiLCJlbWFpbCI6InNwYXJlQGFkbWluLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NjU4NjIwOSwiZXhwIjoxNzc2NjcyNjA5fQ.4PCzxNBDskTLptnXHVRS0PqMWJSuCgTE5emB1jLMV9c
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -212,10 +210,10 @@ Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 Cache-Control: post-check=0,pre-check=0
 Pragma: no-cache
 Expires: Thu, 01 Jan 1970 00:00:00 GMT
-Content-Length: 200
+Content-Length: 193
 Content-Encoding: gzip
 Vary: Accept-Encoding
-Date: Tue, 07 Apr 2026 06:56:30 GMT
+Date: Sun, 19 Apr 2026 08:10:14 GMT
 Server: LiteSpeed
 X-Frame-Options: DENY
 X-Content-Type-Options: nosniff
@@ -227,31 +225,31 @@ alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=259
     "success": true,
     "message": "User approved successfully",
     "data": {
-        "id": "f40493df-6aa5-4df0-b425-1368f314ffe9",
-        "firstName": "Register",
-        "lastName": "Jsonapi",
-        "email": "lesley.watsica@yahoo.com",
+        "id": "964be2db-da12-48de-a352-f5a359efedba",
+        "firstName": "Ndabe",
+        "lastName": "Mazii",
+        "email": "viola.keeling@yahoo.com",
         "approvalStatus": "approved"
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="userLoginTest" classname="Tests.UserRegistrationTest" time="0.71">
-    <system-out><![CDATA[Request method:	POST
-Request URI:	https://ndosiautomation.co.za/APIDEV/login
+  <testcase name="makeUserAdmin" classname="Tests.UserRegistrationTest" time="5.414">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://ndosiautomation.co.za/APIDEV/admin/users/964be2db-da12-48de-a352-f5a359efedba/role
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Accept=*/*
+Headers:		Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIwN2E5ZDY2Ni05ZjE0LTQ5YjktOTJmYi02YjBkYWI5OTAwYjYiLCJlbWFpbCI6InNwYXJlQGFkbWluLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NjU4NjIwOSwiZXhwIjoxNzc2NjcyNjA5fQ.4PCzxNBDskTLptnXHVRS0PqMWJSuCgTE5emB1jLMV9c
+				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "password": "@87654321",
-    "email": "lesley.watsica@yahoo.com"
+    "role": "admin"
 }
 HTTP/1.1 200 OK
 Connection: Keep-Alive
@@ -265,10 +263,60 @@ Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 Cache-Control: post-check=0,pre-check=0
 Pragma: no-cache
 Expires: Thu, 01 Jan 1970 00:00:00 GMT
-Content-Length: 519
+Content-Length: 142
 Content-Encoding: gzip
 Vary: Accept-Encoding
-Date: Tue, 07 Apr 2026 06:56:31 GMT
+Date: Sun, 19 Apr 2026 08:10:20 GMT
+Server: LiteSpeed
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+{
+    "success": true,
+    "message": "User role updated successfully",
+    "data": {
+        "id": "964be2db-da12-48de-a352-f5a359efedba",
+        "role": "admin"
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="userLoginTest" classname="Tests.UserRegistrationTest" time="4.131">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://ndosiautomation.co.za/APIDEV/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Mazii@053103",
+    "email": "viola.keeling@yahoo.com"
+}
+HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+Access-Control-Max-Age: 3600
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Cache-Control: post-check=0,pre-check=0
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Length: 511
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Date: Sun, 19 Apr 2026 08:10:24 GMT
 Server: LiteSpeed
 X-Frame-Options: DENY
 X-Content-Type-Options: nosniff
@@ -281,19 +329,187 @@ alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=259
     "message": "Login successful",
     "data": {
         "user": {
-            "id": "f40493df-6aa5-4df0-b425-1368f314ffe9",
-            "firstName": "Register",
-            "lastName": "Jsonapi",
-            "email": "lesley.watsica@yahoo.com",
-            "role": "user",
+            "id": "964be2db-da12-48de-a352-f5a359efedba",
+            "firstName": "Ndabe",
+            "lastName": "Mazii",
+            "email": "viola.keeling@yahoo.com",
+            "role": "admin",
+            "groupId": "1deae17a-c67a-4bb0-bdeb-df0fc9e2e526",
+            "groupName": "Group A",
+            "approvalStatus": "approved",
+            "createdAt": "2026-04-19 10:10:07",
+            "updatedAt": "2026-04-19 10:10:20"
+        },
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI5NjRiZTJkYi1kYTEyLTQ4ZGUtYTM1Mi1mNWEzNTllZmVkYmEiLCJlbWFpbCI6InZpb2xhLmtlZWxpbmdAeWFob28uY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzc2NTg2MjI0LCJleHAiOjE3NzY2NzI2MjR9.wv9b57HvGzAZ7BRcvnZ6BoVQ9ZZ7RSmUbrNihKK4bwU"
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="verifyUserIsAdmin" classname="Tests.UserRegistrationTest" time="3.656">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://ndosiautomation.co.za/APIDEV/admin/users/964be2db-da12-48de-a352-f5a359efedba
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI5NjRiZTJkYi1kYTEyLTQ4ZGUtYTM1Mi1mNWEzNTllZmVkYmEiLCJlbWFpbCI6InZpb2xhLmtlZWxpbmdAeWFob28uY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzc2NTg2MjI0LCJleHAiOjE3NzY2NzI2MjR9.wv9b57HvGzAZ7BRcvnZ6BoVQ9ZZ7RSmUbrNihKK4bwU
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+Access-Control-Max-Age: 3600
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Cache-Control: post-check=0,pre-check=0
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Length: 319
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Date: Sun, 19 Apr 2026 08:10:28 GMT
+Server: LiteSpeed
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+{
+    "success": true,
+    "message": "User retrieved successfully",
+    "data": {
+        "Id": "964be2db-da12-48de-a352-f5a359efedba",
+        "FirstName": "Ndabe",
+        "LastName": "Mazii",
+        "Email": "viola.keeling@yahoo.com",
+        "Role": "admin",
+        "IsActive": 1,
+        "EmailVerified": 0,
+        "ProfileImage": null,
+        "CreatedAt": "2026-04-19 10:10:07",
+        "UpdatedAt": "2026-04-19 10:10:24",
+        "LastLoginAt": "2026-04-19 10:10:24",
+        "stats": {
+            "testimonialCount": 0,
+            "taskCount": 0,
+            "enrollmentCount": 0
+        }
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="loginAsAdmin" classname="Tests.UserRegistrationTest" time="0.884">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://ndosiautomation.co.za/APIDEV/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "@12345678",
+    "email": "spare@admin.com"
+}
+HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+Access-Control-Max-Age: 3600
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Cache-Control: post-check=0,pre-check=0
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Length: 508
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Date: Sun, 19 Apr 2026 08:10:29 GMT
+Server: LiteSpeed
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+{
+    "success": true,
+    "message": "Login successful",
+    "data": {
+        "user": {
+            "id": "07a9d666-9f14-49b9-92fb-6b0dab9900b6",
+            "firstName": "John",
+            "lastName": "smith",
+            "email": "spare@admin.com",
+            "role": "admin",
             "groupId": "5328c91e-fc40-11f0-8e00-5000e6331276",
             "groupName": "1st Group 2026",
             "approvalStatus": "approved",
-            "createdAt": "2026-04-07 08:56:30",
-            "updatedAt": "2026-04-07 08:56:30"
+            "createdAt": "2026-03-16 16:15:58",
+            "updatedAt": "2026-04-19 10:10:09"
         },
-        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJmNDA0OTNkZi02YWE1LTRkZjAtYjQyNS0xMzY4ZjMxNGZmZTkiLCJlbWFpbCI6Imxlc2xleS53YXRzaWNhQHlhaG9vLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc1NTQ0OTkxLCJleHAiOjE3NzU2MzEzOTF9.Fe3aY5CdpG6JI_-5NPF_m29PRTsGgFNH60N8Yi0e5IY"
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIwN2E5ZDY2Ni05ZjE0LTQ5YjktOTJmYi02YjBkYWI5OTAwYjYiLCJlbWFpbCI6InNwYXJlQGFkbWluLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NjU4NjIyOSwiZXhwIjoxNzc2NjcyNjI5fQ.2xS0lX-kbYN8jy0GekskRNgXwobRT2erEOOEHEZ81QI"
     }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="deleteUserTest" classname="Tests.UserRegistrationTest" time="0.238">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://ndosiautomation.co.za/APIDEV/admin/users/964be2db-da12-48de-a352-f5a359efedba
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIwN2E5ZDY2Ni05ZjE0LTQ5YjktOTJmYi02YjBkYWI5OTAwYjYiLCJlbWFpbCI6InNwYXJlQGFkbWluLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NjU4NjIyOSwiZXhwIjoxNzc2NjcyNjI5fQ.2xS0lX-kbYN8jy0GekskRNgXwobRT2erEOOEHEZ81QI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "status": "deleted"
+}
+HTTP/1.1 200 OK
+Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+Access-Control-Max-Age: 3600
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Cache-Control: post-check=0,pre-check=0
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Length: 78
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Date: Sun, 19 Apr 2026 08:10:29 GMT
+Server: LiteSpeed
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+alt-svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"
+
+{
+    "success": true,
+    "message": "User deleted successfully"
 }
 ]]></system-out>
   </testcase>
