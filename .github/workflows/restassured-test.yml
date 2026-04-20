@@ -65,6 +65,25 @@ jobs:
           path: allure-results/
           retention-days: 30
 
+      - name: Extract Test Summary
+        if: always()
+        run: |
+          if [ -f target/surefire-reports/testng-results.xml ]; then
+           TOTAL=$(grep -oE 'total="[0-9]+"' target/surefire-reports/testng-results.xml | head -1 | grep -oE '[0-9]+')
+           PASSED=$(grep -oE 'passed="[0-9]+"' target/surefire-reports/testng-results.xml | head -1 | grep -oE '[0-9]+')
+           FAILED=$(grep -oE 'failed="[0-9]+"' target/surefire-reports/testng-results.xml | head -1 | grep -oE '[0-9]+')
+           SKIPPED=$(grep -oE 'skipped="[0-9]+"' target/surefire-reports/testng-results.xml | head -1 | grep -oE '[0-9]+')
+           echo "TEST_TOTAL=${TOTAL:-0}" >> $GITHUB_ENV
+           echo "TEST_PASSED=${PASSED:-0}" >> $GITHUB_ENV
+           echo "TEST_FAILED=${FAILED:-0}" >> $GITHUB_ENV
+           echo "TEST_SKIPPED=${SKIPPED:-0}" >> $GITHUB_ENV
+           else
+             echo "TEST_TOTAL=N/A" >> $GITHUB_ENV
+             echo "TEST_PASSED=N/A" >> $GITHUB_ENV
+             echo "TEST_FAILED=N/A" >> $GITHUB_ENV
+             echo "TEST_SKIPPED=N/A" >> $GITHUB_ENV
+           fi
+
 
 
 
