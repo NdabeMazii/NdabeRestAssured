@@ -84,6 +84,57 @@ jobs:
              echo "TEST_SKIPPED=N/A" >> $GITHUB_ENV
            fi
 
+      - name: Send Email with Emailable Report Attachment
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # SMTP server configuration
+          server_address: smtp.gmail.com                    # Gmail SMTP server
+          server_port: 587                                  # TLS secure connection port
+          # Authentication credentials (stored in GitHub secrets for security)
+          username: ${{ secrets.EMAIL_USERNAME }}           # Gmail account email
+          password: ${{ secrets.EMAIL_PASSWORD }}           # Gmail app-specific password
+          # Email content
+          subject: Rest Assured Automation Test Results - Allure Report for 1st Group  # Email subject line
+          to: fitness.seed@gmail.com                        # Recipient email address
+          from: ${{ secrets.EMAIL_USERNAME }}               # Sender email address
+          # Message body with test execution details and formatting
+          body: |
+            Hi Team,
+            
+            ═══════════════════════════════════════════════════════════
+                          TEST EXECUTION REPORT
+            ═══════════════════════════════════════════════════════════
+            
+            Repository  :  ${{ github.repository }}
+            Branch      :  ${{ github.ref_name }}
+            Commit      :  ${{ github.sha }}
+            Run Number  :  ${{ github.run_number }}
+            Triggered by:  ${{ github.actor }}
+            Status      :  COMPLETED
+            
+            ───────────────────────────────────────────────────────────
+                          TEST RESULTS SUMMARY
+            ───────────────────────────────────────────────────────────
+            
+            Total Tests :  ${{ env.TEST_TOTAL }}
+            ✅ Passed    :  ${{ env.TEST_PASSED }}
+            ❌ Failed    :  ${{ env.TEST_FAILED }}
+            ⏭️ Skipped   :  ${{ env.TEST_SKIPPED }}
+            
+            ═══════════════════════════════════════════════════════════
+            
+            Please find the report attached to this email.
+            
+            For more details, visit:
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            
+            Kind Regards,
+            Team Lead
+
+          attachments: target/surefire-reports/emailable-report.html
+
+
 
 
 
