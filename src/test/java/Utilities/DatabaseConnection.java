@@ -8,14 +8,26 @@ public class DatabaseConnection {
     public static String getPassword;
 
     public static void dbConnection() throws SQLException {
-        String dbURL = "jdbc:mysql://102.222.124.22:3306/ndosian6b8b7_teaching";
-        String dbUsername = "ndosian6b8b7_teaching";
-        String dbPassword = "^{SF0a=#~[~p)@l1";
+        // Get DB credentials from environment variables
+        String dbURL = System.getenv("DB_URL");
+        String dbUsername = System.getenv("DB_USERNAME");
+        String dbPassword = System.getenv("DB_PASSWORD");
+
+        // Fallback to default if not set (for local development)
+        if (dbURL == null) {
+            dbURL = "jdbc:mysql://102.222.124.22:3306/ndosian6b8b7_teaching";
+        }
+        if (dbUsername == null) {
+            dbUsername = "ndosian6b8b7_teaching";
+        }
+        if (dbPassword == null) {
+            dbPassword = "^{SF0a=#~[~p)@l1";
+        }
 
         try (Connection connection = DriverManager.getConnection(dbURL, dbUsername, dbPassword)) {
 
             try (Statement statement = connection.createStatement();
-                 ResultSet resultSet = statement.executeQuery("SELECT * FROM loginUser WHERE id = 7")) {
+                 ResultSet resultSet = statement.executeQuery("SELECT * FROM loginUser WHERE id = 6")) {
 
                 while (resultSet.next()) {
                     getEmail = resultSet.getString("email");
