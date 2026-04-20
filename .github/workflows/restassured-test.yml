@@ -48,6 +48,14 @@ jobs:
           ls -la target || true
           echo "Allure results folder:"
           ls -la allure-results || true
+
+      - name: Upload TestNG results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: target/surefire-reports/
+          retention-days: 30
           
       - name: Upload Allure results
         if: always()
@@ -56,6 +64,8 @@ jobs:
           name: allure-results
           path: allure-results/
           retention-days: 30
+
+
 
 
 
